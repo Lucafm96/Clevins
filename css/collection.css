@@ -1,0 +1,19 @@
+.hero-section-collection {
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url('../img/header-2.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-section-collection .logo {
+    font-size: 5em;
+    color: #202121;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
