@@ -1,3 +1,3 @@
 # Clevins
-Recreacion de tienda de ropa online. (Sin terminar)
-Se esta utilizadno HTML, CSS y JavaScript.
+Pagina web de e-commerce. (Sin terminar)
+Teconologias utilizadas: HTML, CSS, JavaScript.
