@@ -26,9 +26,47 @@ a:link, a:visited, a:active {
     justify-content: space-between;
 }
 
-.nav a {
-    width: 20%;
+.nav-items {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
+
+
+.menu-item {
+    background: url(/img/search.png) no-repeat;
+    background-position: center;
+    background-size: 30px;
+    margin-right: 1em;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.menu-item:nth-child(2) {
+    background: url(/img/cart.png) no-repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+.menu-item:nth-child(3) {
+    background: url(/img/menu.png) no-repeat;
+    background-position: center;
+    background-size: 30px;
+    transition: 0.3s ease;
+    filter: invert(1);
+}
+
+.menu-item:nth-child(3).active {
+    z-index: 9;
+    background: url(/img/close.png) no-repeat;
+    background-position: center;
+    background-size: 30px;
+    transition: 0.3s ease;
+    filter: invert(1);
+}
+
 
 .brand-logo {
     width: 50%;
@@ -36,74 +74,26 @@ a:link, a:visited, a:active {
     text-decoration: none;
 }
 
-.nav-items {
-    width: 80%;
-    display: flex;
-    align-items: center;
-}
-
-.search {
-    width: 100%;
-    display: flex;
-}
-
-.search-box {
-    width: 80%;
-    height: 40px;
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: 1px solid #202121;
-    text-transform: capitalize;
-    background: none;
-    color: #202121;
-    outline: none;
-}
-
-.search-btn {
-    width: 20%;
-    height: 40px;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background: #202121;
-    color: #f8f8f8;
-    text-transform: capitalize;
-    font-size: 15px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.search-box::placeholder {
-    color: #202121;
-}
-
-.nav-items a {
-    margin-left: 1em;
-}
-
 .nav-items a img {
     width: 2em;
 }
 
 .links-container {
-    width: 100%;
-    display: flex;
-    padding: 10px 10vw;
-    justify-content: center;
-    list-style: none;
-    border-top: 1px solid #202121;
+    display: none;
 }
 
-.link {
-    text-transform: capitalize;
-    padding: 0 10px;
-    margin: 0 5px;
-    text-decoration: none;
-    color: #202121;
-    transition: .5s;
-    opacity: 0.5;
+.links-container.active {
+    z-index: 8;
+    position: fixed;
+    background: #f8f8f8;
+    top: 0;
+    right: 0;
+    width: 380px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .link:hover {

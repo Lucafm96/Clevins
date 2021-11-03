@@ -5,19 +5,34 @@ const createNav = () => {
         <div class="nav">
             <a href="./index.html"><h2 class="brand-logo">Clevins</h2></a>
             <div class="nav-items">
-                <div class="search">
-                    <input type="text" class="search-box" placeholder="busca nuestros productos">
-                    <button class="search-btn">Buscar</button>
-                </div>
-                <a href="#"><img src="img/cart.png"></a>
+                <div class="menu-item"></div>
+                <div class="menu-item"></div>
+                <div class="menu-item" id="menu-btn"></div>
             </div>  
+            
         </div>
-        <ul class="links-container">
-            <li class="link-item"><a href="./index.html" class="link">Inicio</a></li>
-            <li class="link-item"><a href="#" class="link">Hombre</a></li>
-            <li class="link-item"><a href="#" class="link">Accesorios</a></li>
-        </ul>
+        <div class="links-container">
+            <a href="./index.html" class="link">Inicio</a>
+            <a href="#" class="link">Hombre</a>
+            <a href="#" class="link">Accesorios</a>
+        </div>
     `;
 }
 
 createNav();
+
+const menuBtn = document.querySelector("#menu-btn");
+const navigation = document.querySelector(".links-container");
+const navigation_items = document.querySelectorAll(".links-container a");
+
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("active");
+    navigation.classList.toggle("active");
+});
+
+navigationItems.forEach((navigationItem) => {
+    navigation_items.addEventListener("click", () => {
+        menuBtn.classList.remove("active");
+        navigation.classList.remove("active");
+    })
+})
