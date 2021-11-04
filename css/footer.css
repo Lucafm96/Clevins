@@ -91,3 +91,16 @@ footer {
     color: #f8f8f8;
     background: rgba(0, 0, 0, 0.2);
 }
+
+
+@media (max-width: 600px) {
+    .footer-content {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-ul-container {
+        width: 100%;
+        padding: 2em;
+    }
+}

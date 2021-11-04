@@ -96,6 +96,12 @@ a:link, a:visited, a:active {
     flex-direction: column;
 }
 
+.links-container.active a {
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
 .link:hover {
     opacity: 1;
 }

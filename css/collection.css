@@ -11,9 +11,16 @@
 
 .hero-section-collection .logo {
     font-size: 5em;
-    color: #202121;
+    color: #f8f8f8;
     display: block;
     margin: auto;
     text-align: center;
 }
 
+
+@media (max-width: 600px) {
+    .hero-section-collection {
+        background-image: url(../img/header-2-responsive.jpg);
+    }
+    
+}
