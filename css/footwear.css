@@ -1,14 +1,11 @@
 
-.hero-section-footwear {
+.hero-section-product {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.content {
-    display: block;
-}
-
-.product {
-    margin-top: 2em;
+.hero-section-product .product-card {
+    width: 350px;
+    margin: auto;
 }

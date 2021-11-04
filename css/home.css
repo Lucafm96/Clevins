@@ -225,7 +225,7 @@ body {
     margin-bottom: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
     .hero-section {
         background-image: url(../img/header-responsive.jpg);
     }
