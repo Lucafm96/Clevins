@@ -13,8 +13,8 @@ const createNav = () => {
         </div>
         <div class="links-container">
             <a href="./index.html" class="link">Inicio</a>
-            <a href="#" class="link">Hombre</a>
-            <a href="#" class="link">Accesorios</a>
+            <a href="./collection.html" class="link">Coleccion</a>
+            <a href="./accessories.html" class="link">Accesorios</a>
         </div>
     `;
 }

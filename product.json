@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Pantalon",
+        "description": "pantalon pana",
+        "price": 9.99,
+        "image": "imagen1"
+    },
+    {
+        "id": 2,
+        "name": "Camiseta",
+        "description": "camiseta de algodon",
+        "price": 10,
+        "image": "imagen2"
+    },
+    {
+        "id": 3,
+        "name": "Zapatos",
+        "description": "zapatos de cuero",
+        "price": 25.95,
+        "image": "imagen3"
+    }
+]
