@@ -1,3 +1,3 @@
 # Clevins
-Pagina web de e-commerce. (Sin terminar)
+Tienda de ropa online.
 Teconologias utilizadas: HTML, CSS, JavaScript.
